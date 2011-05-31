@@ -55,18 +55,38 @@
 	
 	Michal explained that JSON parsing was easily achieved on iOS devices, and - as apposed to parsing and handling raw RSS XML - this service was used within our application.
 	
-	
-	
 	\section{Personal Contribution}
 	
 	Within the group, myself and Michal Konturek were the only 2 members to directly own apple hardware and the Mac OS required to develop an iPhone app. Michal already had experience developing iOS applications at his place of employment whereas I had none. To remedy this shortfall, and to contribute to the project I decided to get up to scratch by offering to create a prototype iOS application which featured only the different screens and ways to navigate between them. The development of this prototype can be seen in the public repository\footnote{\texttt{https://github.com/G54MDP/feedreader}} and encompasses all commits up until commit \verb!4f1794!\footnote{\texttt{https://github.com/G54MDP/feedreader/commit/4f1794}}
 	
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=12.65cm]{images/screens1.png}
+		\caption{New Feed, feeds and feed screens from left to right.}
+		\label{screens1}
+	\end{figure}
+	
+	\begin{figure}[t]
+		\centering
+		\includegraphics[width=12.65cm]{images/screens2.png}
+		\caption{Normal content view, bookmarked item, and sharing menu screens.}
+		\label{screens2}
+	\end{figure}
+	
+	Throughout the project I took charge of designing the user interface. The aim was always to be as simple as possible for everyday use, give direct access to the content of each feed item and be simple for new users to pick up. Figure \ref{screens1} shows the main screens which the user will interact with, however the user will spend most of their time in the Feed items view, often opening an closing the app whilst remaining completely within that view or one of its child views.
+	
+	We expect the user to spend most of their time in the ``All Feeds" section which is similar to the unified inbox approach of the mail app. From this list they can select an individual item to go straight to the URL for that item which is shown in a built in safari view showing in figure \ref{screens2}, this screen has a bookmark button for saving content for later on, but more importantly a sharing button in the bottom right which allows the user to share the URL to this page via various services.
+	
+	Originally we wanted Twitter and maybe Facebook integration for sharing content from the app, my research revealed a library called ShareKit\footnote{\texttt{http://getsharekit.com/}} which is listed in the officially recommended twitter Objective C libraries. ShareKit provides the ability to share links, images, text or files with a smattering of popular services, including both Twitter and Facebook. Some, such as Facebook and Twitter required registering for access API keys which I gathered for use within the application.
+	
 	\section{The Group}
     
-    After the coursework was announced and the group was formed, we agreed to have regular weekly meetings to make decisions, I do not think that the other groups members would mind me saying that reservations existed regarding particular technologies and areas of interest. For example the contentions between a game and a standard UI based app, and the decisions around Android and iOS. However this was only the manifestation of enthusiasm, and as a whole, we came to agreements using analysis and reason of our situation.
+	After the coursework was announced and the group was formed, we agreed to have regular weekly meetings to make decisions, I do not think that the other groups members would mind me saying that reservations existed regarding particular technologies and areas of interest. For example the contentions between a game and a standard UI based app, and the decisions around Android and iOS. However this was only the manifestation of enthusiasm, and as a whole, we came to agreements using analysis and reason of our situation.
 	
 	Each member of our group is an accomplished programmer in their own right, and each of us could have made good progress in any of the areas required to make an application of this kind. In fact most decisions where made via a democratic method involving all members, but defaulting to individuals with particular expertise in the relevant subject, whether it be interface design or technical limitations of a platform.
 	
 	\section{Conclusion}
+	
+	
 
 \end{document}
